@@ -48,6 +48,10 @@
   transition: 0.5s;
 }
 
+.navbar-toggler-icon {
+  color: #fafafb;
+}
+
 .btn.btn-primary,
 .btn.btn-secondary {
   color: #ffffff;
