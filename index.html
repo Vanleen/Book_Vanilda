@@ -669,6 +669,21 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        function closeNavbar() {
+            // Ferme le menu en utilisant le bouton du menu (si disponible)
+            var navbarToggle = document.querySelector('.navbar-toggler');
+            if (navbarToggle && !navbarToggle.classList.contains('collapsed')) {
+                navbarToggle.click();
+            }
+        }
+
+        // Ferme le menu lors du défilement de la page
+        window.addEventListener('scroll', function () {
+            closeNavbar();
+        });
+    </script>
 </body>
 
 </html>
